@@ -1,2 +1,2 @@
 # mind
-be wand the imagination
+beyond the imagination
