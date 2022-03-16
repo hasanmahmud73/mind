@@ -36,3 +36,15 @@ ol li{
 text-align: center;
 padding: 10px 30px;
 }
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #FFFFFF;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
