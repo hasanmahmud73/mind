@@ -63,7 +63,7 @@
     <br>
 
     <H2>2. Upload pictures</H2>
-    <input id="fileUpload" type="file" name="fileUpload" />
+    <!-- <input id="fileUpload" type="file" name="fileUpload" />
     <button id="upload-button" onclick="saveFile ()">Upload</button>
 
     <script>
@@ -72,7 +72,17 @@
       fromData.append("file", fileUpload.files[0]);
       await fetchFile(formD)
     }
-    </script>
+    </script> -->
+<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p><label for="file" style="cursor: pointer;"><b>Upload Image</b></label></p>
+<p><img id="output" width="200" /></p>
+
+<script>
+const loadFile = function(event) {
+const image = document.getElementById('output');
+	    image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
    <br>
    <br>         
     <h2>3. Published date & time</h2>
