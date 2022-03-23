@@ -14,55 +14,68 @@
 </head>
 <body>
    <div class="header">
-    <img src="img/logo-creative_mind.png" alt="logo-creative_mind" />
-    <h1>Creative Mind</h1>
+    <img src="logo-creative_mind.png" alt="logo" />
    </div>
       <br>
       <br>
       <nav>       
-        <a href="">Home</a> |
+        <a href="/Users/mahmudh4x/Documents/GitHub/mind/index.html">Home</a> |
         <a href="">Blog</a> |
         <a href="">About us</a> |
         <a href="">Our history</a> |
-        <a href="">Contacts</a>  
+        <a href="/Users/mahmudh4x/Documents/GitHub/mind/contact.html">Contact Us</a>  
       </nav>
     
       <main class="grid">
         <article>
           <h1>
-            "Star war" - It's an idea.
+            Explore your creative mind and share your creations to inspire others.
           </h1>
           <img src="https://cdn.pixabay.com/photo/2016/04/21/16/23/stormtrooper-1343772__340.jpg" alt="Star war" class="feature">
-          <p>Creative mind alway look for new ideas or solve a problem.</p>
-    
-          <p>Logo is giving the kids a tool to use the imagination. Not only kids, grown up also play with lego. Logo is not only a toy, 
-              also elements to nertur thoughts and asperitions and developing motor skill.</p>
+          
 
-<h1><mark>Creative mind's creations:</mark></h1>
+<h1><mark>Easy 3 steps:</mark></h1>
+
+<ol>
+  <li>Register yourself</li>
+  <li>Upload pictures</li>
+  <li>Submit</li>
+</ol>
     
-    
-<H2>Registration form</H2>
+<H2>1. Registration form</H2>
     <form data-test-id="login-form">
         First Name:
         <br>
-        <input type="text" Placeholder="Enter your name..">
+        <input type="text" Placeholder="Enter your first name..">
         <br>
         <br>
         Last Name:<br>
         <input type="text" Placeholder="Enter your last name..">
         <br>
         <br>
-        Age:
-        <br>
-        <input type="number" Placeholder="Enter your age..">
+        City Name:<br>
+        <input type="text" Placeholder="Enter your city name..">
         <br>
         <br>
         <input type="submit" Placeholder="Submit Form..">
     </form>
     <br>
     <br>
-            
-    <h2>Date & Time</h2>
+
+    <H2>2. Upload pictures</H2>
+    <input id="fileUpload" type="file" name="fileUpload" />
+    <button id="upload-button" onclick="saveFile ()">Upload</button>
+
+    <script>
+    async function saveFile() {
+      let formD = new FormData();
+      fromData.append("file", fileUpload.files[0]);
+      await fetchFile(formD)
+    }
+    </script>
+   <br>
+   <br>         
+    <h2>3. Published date & time</h2>
     <BUtton type="button" id="get-data-button" onclick="document.getElementById('date').innerHTML = Date()">Click hear</button>
     <p id="date"></p>
     <br>
@@ -70,7 +83,7 @@
 <br>
 </div>
 <footer>
-    <h6>&copy;2022 Creative Mind, All Rigts Reserved.</h6>
+    <h6>&copy;2022 Creative Mind, All Rights Reserved.</h6>
 </footer>
 </div>
 

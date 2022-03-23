@@ -8,10 +8,10 @@ body {
     text-align: center;
 }
 .content-wrapper{
-    padding: 0px 30px;
+    padding: 70px 50px;
 }
 p {
-    color: blue;  /* Set text color to red */
+    color: blue;  /* Set text color to blue */
   }
 
 h1 {
@@ -37,10 +37,10 @@ text-align: center;
 padding: 10px 30px;
 }
 .header img {
-  float: left;
+  float: center;
   width: 100px;
   height: 100px;
-  background: #FFFFFF;
+  background: #d2e5ee;
 }
 
 .header h1 {
