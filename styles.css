@@ -1,5 +1,50 @@
+/* my 1st css file */
+
 body {
-margin: 0;
-background-color: pink;
+    margin: 80px;
+    font-family: system-ui;
+    background: white;
+    color: black;
+    text-align: center;
+}
+.content-wrapper{
+    padding: 70px 50px;
+}
+p {
+    color: blue;  /* Set text color to blue */
+  }
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+    text-align: left;
+}
+.highlight{
+    font-weight: 700;
+    color: forestgreen;
+}
+ul li{
+    list-style-type: round;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+ol li{
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+.table-wrapper{
 text-align: center;
+padding: 10px 30px;
+}
+.header img {
+  float: center;
+  width: 100px;
+  height: 100px;
+  background: #d2e5ee;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
 }
